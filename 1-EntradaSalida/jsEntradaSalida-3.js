@@ -8,5 +8,3 @@ function Mostar()
 	nombre=document.getElementById('elNombre').value;
 	alert(nombre);
 }
-
-
