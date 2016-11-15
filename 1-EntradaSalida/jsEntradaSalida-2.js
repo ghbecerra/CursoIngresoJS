@@ -10,7 +10,7 @@ function Mostar()
 	var producto;
 	producto="samsung";
 	producto=prompt("ingrese marca","sin marca");
-	var precio=prompt("ingrese precio","999")
+	var precio=prompt("ingrese precio","999");
 	alert("su producto es: "+producto+" y su precio es: "+precio);
 	//espacio dentro de las comillas "su producto es:_"
 	//producto y precio son variables
