@@ -13,14 +13,21 @@ var contadorIntentos;
 function comenzar()
 {
 	//Genero el número RANDOM entre 1 y 100
-	 
-		//alert(numeroSecreto );
-	
-
+	numeroSecreto=Math.floor((Math.random() * 100) + 1);
+	alert ("numero secreto: " +numeroSecreto); 
 }
 
 function verificar()
 {
-	
-	
+	var numero;
+	numero=document.getElementById('numero').value;
+	if (numero == numeroSecreto) { 
+		alert("Usted es un ganador!!! y en solo X intentos");
+		} else {
+			if (numero > numeroSecreto) {
+			alert("se pasó...");
+			} else {
+				alert("falta...");
+			}
+		}
 }
