@@ -14,15 +14,38 @@ var contadorIntentos;
 
 function comenzar()
 {
+	contadorIntentos=0;
 	//Genero el número RANDOM entre 1 y 100
-	 
-	
-
+	numeroSecreto=Math.floor((Math.random() * 100) + 1);
+	alert ("numero secreto: " +numeroSecreto); 
 }
 
 function verificar()
 {
-	
-	
-
+	contadorIntentos++;
+	document.getElementById('intentos').value=contadorIntentos;
+	var numero;
+	numero=document.getElementById('numero').value;
+	if (numero==numeroSecreto) { 
+		if (contadorIntentos==1)
+			alert("usted es un Psíquico");
+		if (contadorIntentos==2)
+			alert("excelente percepción");
+		if (contadorIntentos==3)
+			alert("Esto es suerte");
+		if (contadorIntentos==4)
+			alert("Excelente técnica");
+		if (contadorIntentos==5)
+			alet("usted está en la media");
+		if (contadorIntentos>5 && contadorIntentos<11)
+			alert("falta técnica");
+		if (contadorIntentos>10)
+			alert("afortunado en el amor!!");
+		} else {
+			if (numero>numeroSecreto) {
+				alert("se pasó...");
+				} else {
+					alert("falta...");
+					}
+			}
 }
