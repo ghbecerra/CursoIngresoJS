@@ -1,11 +1,12 @@
+/* Al ingresar una hora, informar: 
+si está entre las 7 y las 11 : "Es de mañana.". */
 function Mostrar()
 {
-//tomo la edad  
-var laHora = document.getElementById('hora').value;
-laHora=parseInt(laHora);
-console.log("hora seleccionada: " +laHora);
-//alert (laHora);
-switch (laHora) {
+var hora;
+hora=document.getElementById('hora').value;
+hora=parseInt(hora);
+console.log("hora seleccionada: "+hora);
+switch(hora){
 	case 7:
 	case 8:
 	case 9:
@@ -13,5 +14,5 @@ switch (laHora) {
 	case 11:
 		alert("Es de mañana.");
 		break;
-	}//fin del switch	
-}//FIN DE LA FUNCIÓN
+	}	
+}

@@ -1,10 +1,13 @@
+/*al seleccionar un mes informar. 
+si tiene 28 días. 
+si tiene 30 días. 
+si tiene 31 días. */
 function Mostrar()
 {
-//tomo la edad  
-var mesDelAño = document.getElementById('mes').value;
-console.log("mes seleccionado: " +mesDelAño);
-//alert (mesDelAño);
-switch (mesDelAño) {
+var mes;
+mes=document.getElementById('mes').value;
+console.log("mes seleccionado: "+mes);
+switch (mes) {
 	default:
 		alert("Este mes tiene 31 días.");
 		break;
