@@ -1,9 +1,10 @@
+/* Al ingresar una edad debemos informar si la persona es mayor de edad */
 function Mostrar()
 {
-//tomo la edad  
 	var edad;
 	edad=document.getElementById('edad').value;
-	if (edad>17) {
-	alert("mayor de edad");
-	} //aca cierra el if
-}//FIN DE LA FUNCIÓN
+	if (edad>17)
+		{
+		alert("Mayor de edad");
+		}
+}
