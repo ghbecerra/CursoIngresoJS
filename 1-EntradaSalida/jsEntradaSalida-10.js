@@ -1,7 +1,6 @@
 /*Debemos lograr tomar el importe por ID. Transformarlo
  a entero (parseInt), luego mostrar el importe con un
  descuento del %25 en el cuadro de texto "RESULTADO". */
-
 function MostrarAumento()
 {
 	//id="importe"
