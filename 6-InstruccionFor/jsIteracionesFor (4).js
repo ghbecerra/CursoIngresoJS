@@ -1,12 +1,11 @@
+/* Al presionar el botón repetir hasta que utilizamos 'BREAK'. */
 function Mostrar()
 {
-
-for (var contador=0; ;contador++)
+var contador;
+for(contador=0; ;contador++)
 	{	
-	if (contador==10)
+	if (contador==13) //condicion para ejecutar el break
 		break; //instruccion break le da un corte al for mas cercano
 	}
-
 alert(contador);
-
-}//FIN DE LA FUNCIÓN
+}
