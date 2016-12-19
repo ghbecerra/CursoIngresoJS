@@ -1,14 +1,12 @@
-/*1.	Para el departamento de facturación:
-A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
-B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
-C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
-*/
+/* 1. Para el departamento de facturación:
+A. Ingresar tres precios de productos y mostrar la suma de los mismos.
+B. Ingresar tres precios de productos y mostrar el promedio de los mismos.
+C. ingresar tres precios de productos y mostrar precio final (más IVA 21%). */
 function Sumar () 
 {
-	//id="PrecioUno"
-	//id="PrecioDos"
-	//id="PrecioTres"
-	var PrecioUno,PrecioDos,PrecioTres;
+	var PrecioUno;
+	var PrecioDos;
+	var PrecioTres;
 	PrecioUno=document.getElementById('PrecioUno').value;
 	PrecioDos=document.getElementById('PrecioDos').value;
 	PrecioTres=document.getElementById('PrecioTres').value;
@@ -22,7 +20,7 @@ function Promedio ()
 	PrecioDos=document.getElementById('PrecioDos').value;
 	PrecioTres=document.getElementById('PrecioTres').value;
 	var sumar=parseInt(PrecioUno)+parseInt(PrecioDos)+parseInt(PrecioTres);
-	var promedio=sumar/3;
+	var promedio=parseInt(sumar)/3;
 	alert("El promedio es : "+promedio);
 }
 function PrecioFinal () 
